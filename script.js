@@ -1,9 +1,9 @@
-let btn = document.querySelector('button');
+let btn = document.getElementById('time')
 
 function calcul(){
-
-	alert('Y a encore du boulot...');
-
+	var today = new Date();
+	var date = 'Nous sommes le: '+today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+	alert(date);
 }
 
 btn.addEventListener('click', calcul);
