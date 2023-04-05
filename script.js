@@ -20,26 +20,35 @@ function calcul() {
 
 	let valeurLVA = (parseFloat(elmts[3].value) + parseFloat(elmts[4].value) + parseFloat(elmts[5].value))/3;
 	let LVA1 = document.getElementById('moy_bull_LVA_1');
-	LVA1.innerHTML = valeurLVA;
+	let moyenneLVA = valeurLVA.toFixed(2);
+	LVA1.innerHTML = moyenneLVA;
 	
 	let valeurLVB = (parseFloat(elmts[6].value) + parseFloat(elmts[7].value) + parseFloat(elmts[8].value))/3;
 	let LVB1 = document.getElementById('moy_bull_LVB_1');
-	LVB1.innerHTML = valeurLVB;
+	let moyenneLVB = valeurLVB.toFixed(2);
+	LVB1.innerHTML = moyenneLVB;
 	
 	let valeurES = (parseFloat(elmts[9].value) + parseFloat(elmts[10].value) + parseFloat(elmts[11].value))/3;
 	let ES1 = document.getElementById('moy_bull_ENS_1');
-	ES1.innerHTML = valeurES;
+	let moyenneES = valeurES.toFixed(2);
+	ES1.innerHTML = moyenneES;
 	
 	let valeurSPEP = (parseFloat(elmts[12].value) + parseFloat(elmts[13].value) + parseFloat(elmts[14].value))/3;
 	let SPEP1 = document.getElementById('moy_bull_SPE_1');
-	SPEP1.innerHTML = valeurSPEP;
+	let moyenneSPEP = valeurSPEP.toFixed(2);
+	SPEP1.innerHTML = moyenneSPEP;
 	
 	let valeurEMC = (parseFloat(elmts[15].value) + parseFloat(elmts[16].value) + parseFloat(elmts[17].value))/3;
 	let EMC1 = document.getElementById('moy_bull_EMC_1');
-	EMC1.innerHTML = valeurEMC;
+	let moyenneEMC = valeurEMC.toFixed(2);
+	EMC1.innerHTML = moyenneEMC;
+
+	let controleCCP = (moyenneHG*6+moyenneES*6+moyenneEMC*6+moyenneLVA*6+moyenneLVB*6+moyenneSPEP*8)/38
+	let controleCCP1 = document.getElementById("total_controle_continu_premiere")
+	let moyenneCC = controleCCP.toFixed(2)
+	controleCCP1.innerHTML = moyenneCC
 
 	
-
 }
 
 
