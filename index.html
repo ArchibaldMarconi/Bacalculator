@@ -9,7 +9,7 @@
 		<title>Bacalculator</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>Ma note au Bac</title>
-		
+
 	</head>
 
 	<body>
@@ -17,6 +17,19 @@
 		<header>
 			<h1>Bacalculator | Ma note au Bac</h1>
 		</header>
+			<section class="loader">
+
+			<div class="slider" style="--i:0">
+			</div>
+			<div class="slider" style="--i:1">
+			</div>
+			<div class="slider" style="--i:2">
+			</div>
+			<div class="slider" style="--i:3">
+			</div>
+			<div class="slider" style="--i:4">
+			</div>
+		  </section>
 		
 		<div id="general">
 			<div class="texte">
@@ -25,7 +38,38 @@
 				<p>L'image ci-contre vous rappelle la répartition des coefficients de ces différentes épreuves.</p>
 			</div>
 		</div>
-		<img src="bac_2022.jpg" alt="Bac 2022" />
+		<div class="container">
+			<h1>
+			   <a href="#menu">Menu</a>
+			</h1>
+			   
+		   <div class="popover" id="menu">
+			<div class = 'content'>
+			 <a href="#" class="close"></a>
+			  <div class = 'nav'>
+			   <ul class = 'nav_list'>
+				 
+				 <div class = 'nav_list_item'>
+				 <li><a href="#">Acceuil</a></li>
+				 </div>
+				<div class = 'nav_list_item'>
+				   <li><a href="pages">A Propos de nous</a></li>
+				 </div>
+			   <div class = 'nav_list_item'>
+				 <li><a href="pages/login.html">Se connecter</a></li>
+				 </div>
+				 <div class = 'nav_list_item'>
+					<li><a href="pages/signIn.html">S'inscrire</a></li>
+					</div>
+				<div class = 'nav_list_item'>
+				   <li><a href="#">Contact</a></li>
+				 </div>
+				 
+			   </ul>
+			 </div>
+			</div>
+			</div>
+			</div>
 		<hr>
 		
 		<form id="notes" name="formulaire">
