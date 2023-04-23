@@ -1,0 +1,114 @@
+body
+{
+	background-color:white;
+    padding: 30px;
+    
+    
+}
+#general
+{
+    margin: 30px;
+    background-color:#e0cdbe;
+    border-radius: 30px;
+    height: 1500px;
+}
+#Nom
+{
+    background-color: rgb(255, 255, 255) ;
+    padding-left: 100px;
+    margin-right: 800px;
+    border-radius: 30px;
+    height: 130px;
+    transform: translate(480px,-486px);
+      
+}
+#nom-txt
+{
+    transform: translate(20px, 30px);
+}
+#body-g
+{
+    background-color: rgb(255, 255, 255) ;
+    padding-left: 100px;
+    margin-right: 800px;
+    border-radius: 30px;
+    height: 60px;
+    transform: translate(480px,-486px);
+
+    
+    
+}
+#nom-g{
+    transform: translate(510px,-486px);
+
+}
+#comp
+{
+    background-color: rgb(255, 255, 255) ;
+    padding-left: 100px;
+    margin-right: 800px;
+    border-radius: 30px;
+    height: 150px;
+    transform: translate(480px,-486px);
+    
+    
+}
+#langue
+{
+    background-color: rgb(255, 255, 255) ;
+    padding-left: 100px;
+    margin-right: 800px;
+    border-radius: 30px;
+    height: 80px;
+    transform: translate(480px,-486px);
+    
+    
+}
+#passion
+{
+    background-color: rgb(255, 255, 255) ;
+    padding-left: 100px;
+    margin-right: 800px;
+    border-radius: 30px;
+    height: 100px;
+    transform: translate(480px,-486px);
+    
+    
+}
+#contact
+{
+    transform: translate(100px,-900px);
+}
+
+img{
+    margin:30px;
+    padding-left: 10px;
+    border-radius: 30px;
+    width: 401.5px;
+    height: 449px;
+}
+li{
+    font-size: large;
+    transform: translate(0px, 20px);
+    
+}
+
+h1{
+
+    margin: 30px;
+    transform: translate(20px,30px);
+    font-size: 100px;
+    text-align: center;
+}
+
+h3{
+    
+    font-family:"Norwester", sans-serif;
+}
+
+
+@font-face {
+	font-family: 'Norwester';
+	src: url("norwester.regular.otf") format(".otf");
+}
+
