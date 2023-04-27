@@ -1,84 +1,86 @@
-#general
-{
-    margin: 10px;
+body{
     background-color:#e0cdbe;
-    border-radius: 20px;
-    height: max-content;
-    padding: 30px;
 }
-
-#box-g{
+header{
+    background-color: white;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#box-general{
+    background-color: #e0cdbe;
     display: flex;
     flex-direction: row;
-    padding: 10px;
     width: 100%;
-    background-color: black;
-    align-self: center;
+    height: 100%;
 
 }
-
 #box1{
     display: flex;
     flex-direction: column;
-    background-color: rgb(16, 190, 0) ;
-    border-radius: 30px; 
-    width: 50%;
+    align-items: center;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
 }
 
 #box2{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    border-radius: 30px;
-    background-color: red;    
-}
-
-#Nom
-{
-    background-color: rgb(255, 255, 255) ;
-    border-radius: 30px;   
-    
-    
-}
-
-#body-g
-{
-    background-color: rgb(255, 255, 255) ;
-    border-radius: 30px; 
-    width: 70%;
-    
+    width: 100%;
+    align-items: left;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: white;
 
 }
 
 
-
+#body-g{
+    width: 100%;
+    padding: 1.25px;
+    padding-left:115px;
+    margin-right: 20px;
+}
+#nom{
+    width: 100%;
+    height: 100px;
+    padding: 1.25px;
+    padding-left:115px;
+    margin-right: 20px;
+}
 img{
-    margin:30px;
-    border-radius: 30px;
-    width: 200.75px;
-    height: 224.5px;
+    width:200.75;
+    height: 224.5;
+    border-radius: 20px;
+    align-items: left;
 }
-
-li{
-    font-size: large;
-    
-}
-
-h1{
-
-    margin: 30px;
-    font-size: 100px;
-    text-align: center;
-}
-
 h3{
-    
-    font-family:"Norwester", sans-serif;
+    font-family:'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
 }
+#nom-g{
+    background-color:#e0cdbe;
+    width: 19cm;
+    text-align: center;
 
-
+}
+#langue{
+    text-align: left;
+    width: 17cm;
+}
+#button{
+    margin: 10px;
+}
 @font-face {
 	font-family: 'Norwester';
 	src: url("norwester.regular.otf") format(".otf");
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url("Bacalculator-main-1\Bacalculator-main\CV gabriel\roboto") format(".ttf");
 }
 
