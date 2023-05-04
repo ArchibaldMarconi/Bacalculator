@@ -14,179 +14,81 @@
 
 	<body>
 		
-		<header>
-			<h1>Bacalculator | Ma note au Bac</h1>
-		</header>
-			<section class="loader">
+	<div id="all">
+		<div id="head">
+			<header>
+				<h1>Bacalculator | Ma note au Bac</h1>
+			</header>
+				<section class="loader">
 
-			<div class="slider" style="--i:0">
-			</div>
-			<div class="slider" style="--i:1">
-			</div>
-			<div class="slider" style="--i:2">
-			</div>
-			<div class="slider" style="--i:3">
-			</div>
-			<div class="slider" style="--i:4">
-			</div>
-		  </section>
-		
-		<div id="general">
-			<div class="texte">
-				<h2>Ce simulateur vous permettra  de calculer votre note finale au Bac en entrant vos notes aux différentes épreuves. Fait par Oscar Egenschwiller, Archibald Marconi et Gabriel Dupuch.</h2>
-				
-				<h2>L'image ci-contre vous rappelle la répartition des coefficients de ces différentes épreuves.</h2>
-			</div>
-		</div>
-		<div class="container">
-			<h1>
-			   <a href="#menu">Menu</a>
-			</h1>
-			   
-		   <div class="popover" id="menu">
-			<div class = 'content'>
-			 <a href="#" class="close"></a>
-			  <div class = 'nav'>
-			   <ul class = 'nav_list'>
-				 
-				 <div class = 'nav_list_item'>
-				 <li><a href="#">Acceuil</a></li>
-				 </div>
-				<div class = 'nav_list_item'>
-				   <li><a href="page-CV.html">A Propos de nous</a></li>
-				 </div>
-			   <div class = 'nav_list_item'>
-				 <li><a href="pages/login.html">Se connecter</a></li>
-				 </div>
-				 <div class = 'nav_list_item'>
-					<li><a href="pages/signIn.html">S'inscrire</a></li>
-					</div>
-				<div class = 'nav_list_item'>
-				   <li><a href="#">Contact</a></li>
-				 </div>
-				 
-			   </ul>
-			 </div>
-			</div>
-			</div>
-			</div>
-		<hr>
-		
-		<form id="notes" name="formulaire">
-			<div id="premiere">
-				<h2>Première</h2>
-				<div class="bulletins">
-					<h3>Controle continu</h3>
-						<h4>Histoire Géographie</h4>
-							<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-							<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-							<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-							<p>Moyenne histoire-géographie en première :<span id="moy_bull_HG_1"></span></p>
-
-						<h4>LVA</h4>
-							<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-							<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-							<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-							<p>Moyenne LVA en première :<span id="moy_bull_LVA_1"></span></p>
-						
-						<h4>LVB</h4>
-							<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-							<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-							<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-							<p>Moyenne LVB en première :<span id="moy_bull_LVB_1"></span></p>
-
-						<h4>Enseignement scientifique</h4>
-							<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-							<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-							<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-							<p>Moyenne enseignement scientifique en première :<span id="moy_bull_ENS_1"></span></p>
-					
-						<h4>Enseignement de spécialité suivi uniquement en première</h4>
-							<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-							<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-							<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-							<p>Moyenne enseignement spécialité de première :<span id="moy_bull_SPE_1"></span></p>
-
-						<h4>EMC</h4>
-							<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-							<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-							<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-							<p>Moyenne EMC en première :<span id="moy_bull_EMC_1"></span></p>
-
-						<h4>Résultat contrôle continu de première</h4>
-							<p>Total de points du contrôle continu de première :<span id="total_controle_continu_premiere"></span></p>
-				
+				<div class="slider" style="--i:0">
 				</div>
-				<div class="e_t">
-					<h3>Épreuves terminales</h3>	
-					<label>Français écrit :<input type="number" name="fr_ecrit" min="0" max="20" step='0.5'></label>		
-					<label>Français oral :<input type="number" name="fr_oral" min="0" max="20" step='0.5'></label>
+				<div class="slider" style="--i:1">
 				</div>
-			</div>		
+				<div class="slider" style="--i:2">
+				</div>
+				<div class="slider" style="--i:3">
+				</div>
+				<div class="slider" style="--i:4">
+				</div>
+			</section>
 			
-			<div id="terminale">
-				<h2>Terminale</h2>
-				<div class="bulletins">
-					<h3>Contrôle continu</h3>
-						<h4>Histoire Géographie</h4>
-							<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-							<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-							<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-							<p>Moyenne histoire-géographie en terminale :<span id="moy_bull_HG_2"></span></p>
-
-						<h4>LVA</h4>
-							<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-							<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-							<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-							<p>Moyenne LVA en terminale :<span id="moy_bull_LVA_2"></span></p>
-						
-						<h4>LVB</h4>
-							<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-							<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-							<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-							<p>Moyenne LVB en terminale :<span id="moy_bull_LVB_2"></span></p>
-
-						<h4>Enseignement scientifique</h4>
-							<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-							<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-							<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-							<p>Moyenne enseignement scientifique en terminale :<span id="moy_bull_ENS_2"></span></p>
-					
-						<h4>EPS</h4>
-							<label>CCF1 : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-							<label>CCF2: <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-							<label>CCF3 : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-							<p>Moyenne EPS :<span id="moy_bull_EPS"></span></p>
-
-						<h4>EMC</h4>
-							<label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
-							<label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
-							<label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>	
-							<p>Moyenne EMC en terminale :<span id="moy_bull_EMC_2"></span></p>
-
-						<h4>Résultat contrôle continu de terminale</h4>
-							<p>Total de points du contrôle continu de terminale :<span id="total_controle_continu_terminale"></span></p>
-				
-				</div>
-				
-				<div class="e_t">
-					<h3>Épreuves terminales</h3>	
-					<label>Philo :<input type="number" name="philo" min="0" max="20" step='0.5'></label>		
-					<label>Spécialité 1 :<input type="number" name="spe1" min="0" max="20" step='0.5'></label>
-					<label>Spécialité 2 :<input type="number" name="spe2" min="0" max="20" step='0.5'></label>
-					<label>Grand oral :<input type="number" name="gd_oral" min="0" max="20" step='0.5'></label>
+			<div id="general">
+				<div class="texte">
+					<h3>Ce simulateur vous permettra  de calculer votre note finale au Bac en entrant vos notes aux différentes épreuves. 
+						<br> Fait par Oscar Egenschwiller, Archibald Marconi et Gabriel Dupuch.</h3>
+					</div>
 				</div>
 			</div>
-		</form>
-		
-		<div id="resultat">
-			<button id="time" type="button" name="time">Je donne la date!</button>	
-			<button id="calcul" type="button" name="calcul">Ma note au Bac</button>	
-			<span id="note_finale"></span></p>
-		</div>
+			<div class="container">
+				<h1>
+				<a href="#menu">Menu</a>
+				</h1>
+				
+			<div class="popover" id="menu">
+				<div class="content">
+				<a href="#" class="close"></a>
+				<div class="nav">
+				<ul class="nav_list">
+					
+					<div class="nav_list_item">
+					<li><a href="pages/form.html">Moyenne</a></li>
+					</div>
+					<div class="nav_list_item">
+					<li><a href="pages/page-cv.html">A Propos de nous</a></li>
+					</div>
+					<div class="nav_list_item">
+						<li><a href="pages/sign.html">Comptes</a></li>
+						</div>
+					<div class="nav_list_item">
+					<li><a href="pages/contact.html">Contact</a></li>
+					</div>
+					
+				</ul>
+				</div>
+				</div>
+				</div>
+				
+				</div>
+			<hr>
 
-		</div>
+			<div id="head">
+				
+				<div id="general">
+					<div class="texte">
+						<h3>Calculez votre note dans la rubrique moyenne, <br> connectez-vous ou creez vous un compte sur la rubrique compte. 
+							Puis contactez nous i besoin sur la rubrique contact</h3>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+
+		
+
+		
 	<script type="text/javascript" src="script.js"></script>	
-	</body>
+</body>
 
 </html>
