@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentrez vos notes</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+  <div id="retour1"><div id="retour"><a onclick="javascript:history.back()">Retour</a></div>
+  <div id="general">
+  <form id="notes" name="formulaire">
+    <div id="premiere">
+      <h2>Première</h2>
+      <div class="bulletins">
+        <h3>Controle continu</h3>
+        <div id="class">
+          <h4>Histoire Géographie</h4>
+          <label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+          <label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+          <label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>
+          <p>Moyenne histoire-géographie en première :<span id="moy_bull_HG_1"></span></p>
+        </div>
+        <div id="class">
+          <h4>LVA</h4><label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20"
+              step='0.5'></label>
+          <label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+          <label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>
+          <p>Moyenne LVA en première :<span id="moy_bull_LVA_1"></span></p>
+        </div>
+        <div id="class">
+          <h4>LVB</h4>
+          <label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+          <label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+          <label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>
+          <p>Moyenne LVB en première :<span id="moy_bull_LVB_1"></span></p>
+        </div>
+        <div id="class">
+          <h4>Enseignement scientifique</h4>
+          <label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+          <label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+          <label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>
+          <p>Moyenne enseignement scientifique en première :<span id="moy_bull_ENS_1"></span></p>
+        </div>
+        <div id="class">
+          <h4>Enseignement de spécialité suivi uniquement en première</h4>
+          <label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+          <label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+          <label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>
+          <p>Moyenne enseignement spécialité de première :<span id="moy_bull_SPE_1"></span></p>
+        </div>
+        <div id="class">
+          <h4>EMC</h4>
+          <label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+          <label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+          <label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>
+          <p>Moyenne EMC en première :<span id="moy_bull_EMC_1"></span></p>
+        </div>
+        <div id="class">
+          <h4>Résultat contrôle continu de première</h4>
+          <p>Total de points du contrôle continu de première :<span id="total_controle_continu_premiere"></span></p>
+        </div>
+
+      </div>
+      <div class="e_t">
+        <h3>Épreuves terminales</h3>
+        <label>Français écrit :<input type="number" name="fr_ecrit" min="0" max="20" step='0.5'></label>
+        <label>Français oral :<input type="number" name="fr_oral" min="0" max="20" step='0.5'></label>
+      </div>
+    </div>
+
+    <div id="terminale">
+      <h2>Terminale</h2>
+      <div class="bulletins">
+        <h3>Contrôle continu</h3>
+        <div id="class">
+          <h4>Histoire Géographie</h4>
+          <label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+          <label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+          <label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>
+          <p>Moyenne histoire-géographie en terminale :<span id="moy_bull_HG_2"></span></p>
+        </div>
+
+        <div id="class">
+          <h4>LVA</h4>
+          <label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+          <label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+          <label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>
+          <p>Moyenne LVA en terminale :<span id="moy_bull_LVA_2"></span></p>
+        </div>
+
+        <div id="class">
+          <h4>LVB</h4>
+          <label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+          <label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+          <label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>
+          <p>Moyenne LVB en terminale :<span id="moy_bull_LVB_2"></span></p>
+        </div>
+
+        <div id="class">
+          <h4>Enseignement scientifique</h4>
+          <label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+          <label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+          <label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>
+          <p>Moyenne enseignement scientifique en terminale :<span id="moy_bull_ENS_2"></span></p>
+        </div>
+
+        <div id="class">
+          <h4>EPS</h4>
+          <label>CCF1 : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+          <label>CCF2: <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+          <label>CCF3 : <input type="number" name="3t" min="0" max="20" step='0.5'></label>
+          <p>Moyenne EPS :<span id="moy_bull_EPS"></span></p>
+        </div>
+
+        <div id="class">
+          <h4>EMC</h4>
+          <label>1<sup>er</sup> Trimestre : <input type="number" name="1t" min="0" max="20" step='0.5'></label>
+          <label>2<sup>ème</sup> Trimestre : <input type="number" name="2t" min="0" max="20" step='0.5'></label>
+          <label>3<sup>ème</sup> Trimestre : <input type="number" name="3t" min="0" max="20" step='0.5'></label>
+          <p>Moyenne EMC en terminale :<span id="moy_bull_EMC_2"></span></p>
+        </div>
+
+        <div id="class">
+          <h4>Résultat contrôle continu de terminale</h4>
+          <p>Total de points du contrôle continu de terminale :<span id="total_controle_continu_terminale"></span></p>
+        </div>
+
+      </div>
+
+      <div class="e_t">
+        <h3>Épreuves terminales</h3>
+        <label>Philo :<input type="number" name="philo" min="0" max="20" step='0.5'></label>
+        <label>Spécialité 1 :<input type="number" name="spe1" min="0" max="20" step='0.5'></label>
+        <label>Spécialité 2 :<input type="number" name="spe2" min="0" max="20" step='0.5'></label>
+        <label>Grand oral :<input type="number" name="gd_oral" min="0" max="20" step='0.5'></label>
+      </div>
+    </div>
+  </form>
+
+  <div id="resultat">
+    <button id="time" type="button" name="time">Je donne la date!</button>
+    <button id="calcul" type="button" name="calcul">Ma note au Bac</button>
+    <span id="note_finale"></span></p>
+  </div>
+
+  </div>
+  </div>
+  <script src="../script.js"></script>
+
+</body>
+
+</html>

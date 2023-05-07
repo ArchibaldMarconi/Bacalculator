@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <title>Bacalculator | Compte</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container a-container" id="a-container">
+            <form class="form" id="a-form" method="" action="">
+                <h2 class="form_title title">Creer mon compte</h2>
+                <div class="form__icons">
+                    <img class="form__icon" src="../images/microsoft.svg" >
+                    <img id="googlesvg" class="form__icon" src="../images/google.svg">
+                    <img class="form__icon" src="../images/facebook.svg">
+                </div><span class="form__span">ou utiliser votre email pour votre inscription</span>
+                <input id="signName" class="form__input" type="text" placeholder="Prénom Nom">
+                <input id="signUsername" class="form__input" type="text" placeholder="Nom d'utilisateur">
+                <input id="signMail" class="form__input" type="text" placeholder="Email">
+                <input id="signPassword" class="form__input" type="password" placeholder="Mot de passe">
+                <button type="submit" id="registerSubmit" class="form__button button submit">S'incrire</button>
+
+            </form>
+        </div>
+        <div class="container b-container" id="b-container">
+            <form class="form" id="b-form" method="" action="">
+                <h2 class="form_title title">Se connecter a son compte</h2>
+                <div class="form__icons"><img class="form__icon" src="../images/microsoft.svg" alt="">
+                    <img class="form__icon" src="../images/google.svg">
+                    <img class="form__icon" src="../images/facebook.svg"></div>
+                <span class="form__span">ou utilisez votre adresse mail</span>
+                <input id="loginUsername" class="form__input" type="text" placeholder="Nom d'utilisateur">
+                <input id="loginPassword" class="form__input" type="password" placeholder="Password">
+                <div class="item">
+                    <div class="checkbox-circle2">
+                      <input type="checkbox" id="checkbox-circle2" name="check">
+                      <label for="checkbox-circle2">Se souvenir de moi</label>
+                    </div>
+                  </div>
+                <a class="form__link">Oublié votre mot de passe ?</a>
+                <button id="loginSubmit" class="form__button button submit">S'INSCRIRE</button>
+            </form>
+        </div>
+        <div class="switch" id="switch-cnt">
+            <div class="switch__circle"></div>
+            <div class="switch__circle switch__circle--t"></div>
+            <div class="switch__container" id="switch-c1">
+                <h2 class="switch__title title">Rebonjour</h2>
+                <p class="switch__description description">Pour rester en contact avec nous et sauvegarder vos moyennes merci de vous connecter.</p><button class="switch__button button switch-btn">SE CONNECTER</button>
+            </div>
+            <div class="switch__container is-hidden" id="switch-c2">
+                <h2 class="switch__title title">Salut</h2>
+                <p class="switch__description description">Entre tes données personnelles et continue ton apprentissage sans stress</p><button class="switch__button button switch-btn">S'INSCRIRE</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script type="module" src="fb.js"></script>
+</body>
+
+</html>
